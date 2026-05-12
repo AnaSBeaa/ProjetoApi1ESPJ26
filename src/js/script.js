@@ -10,7 +10,7 @@ async function configurarCamera{
     try{
         const midia = await navigator.mediaDevices.getUserMedia({
             video:{facingMode: "environment"}, //habilitando a câmera traseira
-            audio: false;
+            audio: false
         })
         videoElemento.srcObject = midia;
         videoElemento.onplay(); //garante que o video comece
